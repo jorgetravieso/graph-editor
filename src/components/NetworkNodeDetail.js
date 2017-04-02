@@ -39,8 +39,8 @@ class NetworkNodeDetail extends Component {
             <div className="panel panel-default" style={styles.panel}>
                 <div className="panel-body" style={styles.body}>Node Properties</div>
                 <ul className="list-group">
-                    <li className="list-group-item"><strong>Name</strong>: {this.props.node.type}</li>
-                    <li className="list-group-item"><strong>Type</strong>: {this.props.node.name}</li>
+                    <li className="list-group-item"><strong>Name</strong>: {this.props.node.name}</li>
+                    <li className="list-group-item"><strong>Type</strong>: {this.props.node.type}</li>
                 </ul>
             </div>
         );

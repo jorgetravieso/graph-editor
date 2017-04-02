@@ -1,0 +1,60 @@
+form a {
+    margin-left: 5px;
+}
+
+.network svg {
+    background-color: #FFF;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.network svg:not(.active):not(.ctrl) {
+    cursor: crosshair;
+}
+
+.network path.link {
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-width: 2px;
+    cursor: default;
+}
+
+.network svg:not(.active):not(.ctrl) path.link {
+    cursor: pointer;
+}
+
+.network path.link.selected {
+    stroke-dasharray: 10,2;
+}
+
+.network path.link.dragline {
+    pointer-events: none;
+}
+
+.network path.link.hidden {
+    stroke-width: 0;
+}
+
+.network circle.node {
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+.network circle.node.reflexive {
+    stroke: #000 !important;
+    stroke-width: 2.5px;
+}
+
+.network text {
+    font: 12px sans-serif;
+    pointer-events: none;
+}
+
+.network text.in-name {
+    text-anchor: middle;
+    font-weight: normal;
+}

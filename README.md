@@ -1,6 +1,6 @@
 ## graph-editor
 A directed graph editor with React, Redux and D3.js
-<img src="https://github.com/jtraviesor/graph-editor/raw/master/misc/sc2.png" width="700" height="350"/>
+<img src="https://github.com/jtraviesor/graph-editor/raw/master/misc/sc2.png" width="515" height="350"/>
 
 ### Running it
 

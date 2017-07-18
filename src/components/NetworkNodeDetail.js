@@ -12,15 +12,6 @@ class NetworkNodeDetail extends Component {
                     </div>
         }
 
-        const colors = {
-            "explicit-intent" : "#8DC9DC",
-            "implicit-intent" : "#F6F7EB",
-            "terminal-intent" : "#F6F7EB",
-            "slot": "#9ABBD6",
-            "new": "#3F88C5"
-        };
-
-        const color = new Color(colors[this.props.node.type]);
         const styles = {
             panel: {
                 //"border": `${color.darken(0.7)} 1px solid`

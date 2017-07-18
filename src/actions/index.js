@@ -25,28 +25,28 @@ export function fetchNetworks() {
 export function fetchNetwork(id) {
 
     var nodes = [
-        {id: 0, reflexive: false, type: "person", name: "John"},
-        {id: 1, reflexive: false, type: "person", name: "Eddie"},
-        {id: 3, reflexive: false, type: "person", name: "Mariana"},
-        {id: 4, reflexive: false, type: "person", name: "Lauren"},
-        {id: 5, reflexive: false, type: "person", name: "George"},
-        {id: 6, reflexive: false, type: "movie", name: "Matrix I"},
-        {id: 7, reflexive: false, type: "person", name: "Paul"},
-        {id: 8, reflexive: false, type: "movie", name: "Matrix II"},
-        {id: 9, reflexive: false, type: "movie", name: "Matrix III"}
+        {id: 0, highlighted : false, reflexive: false, type: "person", name: "John"},
+        {id: 1, highlighted : false, reflexive: false, type: "person", name: "Eddie"},
+        {id: 3, highlighted : false, reflexive: false, type: "person", name: "Mariana"},
+        {id: 4, highlighted : false, reflexive: false, type: "person", name: "Lauren"},
+        {id: 5, highlighted : false, reflexive: false, type: "person", name: "George"},
+        {id: 6, highlighted : false, reflexive: false, type: "movie", name: "Matrix I"},
+        {id: 7, highlighted : true, reflexive: false, type: "person", name: "Keanu"},
+        {id: 8, highlighted : true, reflexive: false, type: "movie", name: "Matrix II"},
+        {id: 9, highlighted : true, reflexive: false, type: "movie", name: "Matrix III"}
     ];
 
     var links = [
-        {source: nodes[0], target: nodes[2], left: false, right: true},
-        {source: nodes[0], target: nodes[3], left: false, right: true},
-        {source: nodes[0], target: nodes[4], left: false, right: true},
-        {source: nodes[1], target: nodes[2], left: false, right: true},
-        {source: nodes[1], target: nodes[3], left: false, right: true},
-        {source: nodes[1], target: nodes[4], left: false, right: true},
-        {source: nodes[3], target: nodes[5], left: false, right: true},
-        {source: nodes[4], target: nodes[5], left: false, right: true},
-        {source: nodes[6], target: nodes[7], left: false, right: true},
-        {source: nodes[6], target: nodes[8], left: false, right: true}
+        {sourceIndex: 0, targetIndex: 2, left: false, right: true},
+        {sourceIndex: 0, targetIndex: 3, left: false, right: true},
+        {sourceIndex: 0, targetIndex: 4, left: false, right: true},
+        {sourceIndex: 1, targetIndex: 2, left: false, right: true},
+        {sourceIndex: 1, targetIndex: 3, left: false, right: true},
+        {sourceIndex: 1, targetIndex: 4, left: false, right: true},
+        {sourceIndex: 3, targetIndex: 5, left: false, right: true},
+        {sourceIndex: 4, targetIndex: 5, left: false, right: true},
+        {sourceIndex: 6, targetIndex: 7, left: false, right: true},
+        {sourceIndex: 6, targetIndex: 8, left: false, right: true}
     ];
 
     return {

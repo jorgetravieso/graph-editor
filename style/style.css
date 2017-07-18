@@ -1,8 +1,38 @@
-form a {
-    margin-left: 5px;
+.app {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
-.network svg {
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    .app {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: 300px !important;
+        margin-left: 300px !important;
+    }
+}
+
+
+body {
+    background-color: #fafafa;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+kbd {
+    padding: 2px 3px;
+    font-size: 1.05em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+
+.intent-net svg {
     background-color: #FFF;
     cursor: default;
     -webkit-user-select: none;
@@ -12,49 +42,63 @@ form a {
     user-select: none;
 }
 
-.network svg:not(.active):not(.ctrl) {
+/** On focus outline */
+.intent-net svg:focus {
+    outline: #4D90FE auto 2px;
+    outline-offset: -2px;
+}
+
+.intent-net svg:not(.active):not(.ctrl) {
     cursor: crosshair;
 }
 
-.network path.link {
+.intent-net path.link {
     fill: none;
-    stroke: #b3b3b3;
-    stroke-width: 2px;
+    stroke: #E5E5E5;
+    stroke-width: 3px;
     cursor: default;
 }
 
-.network svg:not(.active):not(.ctrl) path.link {
+.intent-net svg:not(.active):not(.ctrl) path.link {
     cursor: pointer;
 }
 
-.network path.link.selected {
+.intent-net path.link.selected {
     stroke-dasharray: 10,2;
 }
 
-.network path.link.dragline {
+.intent-net path.link.highlighted {
+    stroke: #4A4A4A; /* dark grey */
+}
+
+.intent-net path.link.dragline {
     pointer-events: none;
 }
 
-.network path.link.hidden {
+.intent-net path.link.hidden {
     stroke-width: 0;
 }
 
-.network circle.node {
+.intent-net circle.node {
     stroke-width: 1.5px;
     cursor: pointer;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow:    ellipsis;*/
 }
 
-.network circle.node.reflexive {
+.intent-net circle.node.reflexive {
     stroke: #000 !important;
     stroke-width: 2.5px;
 }
 
-.network text {
-    font: 12px sans-serif;
+.intent-net text {
+    font-size: 0.93em;
+    font-weight: 300;
     pointer-events: none;
 }
 
-.network text.in-name {
+.intent-net text.in-name {
     text-anchor: middle;
     font-weight: normal;
 }

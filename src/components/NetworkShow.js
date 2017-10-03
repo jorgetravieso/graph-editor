@@ -34,6 +34,7 @@ class NetworkShow extends Component {
                             links={network.links}
                             onNodeSelected={this.props.selectNode}
                             inverted
+                            editable
                             height="500"
                         />
                     </div>

@@ -20,3 +20,8 @@ Navigate to http://localhost:8080/network/1
 ### Props
 Graph.js Props
 
+### Features
+- Editable
+- Responsive layout
+- <kbd>Shift</kbd>: Zoom/Pan
+- <kbd>Ctrl</kbd>: Move node
